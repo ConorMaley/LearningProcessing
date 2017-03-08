@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Learning Processing with Conor</title>
+		<script type="text/javascript" src="assets/js/processing.js"></script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/processing_3_logo.png" alt="" /></span>
+						<h1>Learning Processing with Conor</h1>
+						<p>A story of how I learned how to program using Processing.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#first">The Very Beginning</a></li>
+							<li><a href="#second">Basic Animations</a></li>
+							<li><a href="#third">Simple Games and Maps</a></li>
+							<li><a href="#fourth">Later Works</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Introduction</h2>
+										</header>
+
+<!-- Order of events:
+sec1
+smiley_face.pde
+drawing.pde
+squares.pde
+
+sec2
+totalcontrol.pde
+calcexample.pde
+circleandmousepressed.pde
+mousebubble.pde
+runningman.pde
+rocketship.pde
+
+sec3
+turtlehurdler.pde
+tie_fighter.pde
+simplesnake.pde
+randomsquares.pde
+mapping.pde
+randommapping.pde
+
+sec4
+gradientwiggle.pde
+-->
+
+										<p>Hello! My name's Conor and I am about to graduate from the College of Wooster with a degree in Mathematics and Computer Science. I've had this file directory just sitting in my computer for the longest time called <b>/Things I want to keep/code/</b>, and it's basically a folder from the computer I used in high school of all of the code I wrote during my first year of programming. I learned how to program using a lightweight, visual-based programming language called <a href="https://www.processing.org">Processing</a>. After sifting through lines of elementary-level code and becoming nostalgic of my high school days, I though it would be cool if I used this site as a showcase or walkthrough of how I learned coding through Processing! You will see advances in not only programming techniques used but also in quality of material produced. Without further ado, let's begin.</p>
+										<!--<canvas id="theCanvas" data-processing-sources="assets/processing/RandomMapping.pde"></canvas>-->
+										<!-- <ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li> 
+										</ul>
+										-->
+									</div>
+									<!--<span class="image"><img src="images/pic01.jpg" alt="" /></span> -->
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class = "major">
+									<h2>The Very Beginning</h2>
+								</header>
+								<section>
+								<h3>Slightly Creepy Faces</h3>
+									<p>
+										First and foremost, "sketches" refers to a program running through Processing. One of the first things I did was making static drawings and exploring the user interactions that Processing has to offer. This here is <b>smiley_face.pde</b>. It's a pretty creepy looking, hard-coded smiley face made out of curves, ellipses, and lines. I guess I tried to make it do something when you click the screen because there is a <b>mousePressed()</b> function embedded in the code. I'm positive there are other drawings like this, but I didn't even bother saving them. 
+									</p>
+									
+									<canvas id="smiley_face" data-processing-sources="assets/processing/smiley_face.pde"></canvas>
+									
+									<p>
+										I continued with the idea of a smiley face and included more mouse interactions. The following is called <b>drawing.pde</b>. The user can draw lines by pressing down on the mouse and dragging. I think it was intended for users to complete the face, giving the two circles a nose, a mouth, and maybe even ears. I edited the code so that while active on the next sketch, you can press any key to reset the sketch. 
+									</p>
+
+									<canvas id="drawing" data-processing-sources="assets/processing/drawing.pde"></canvas>
+
+									<p>
+										After learning the basics of what can be done in Processing, I learned the power of for loops. The following is a static drawing of squares that change color gradiantly based on the location in the sketch.
+
+									</p>
+
+									<canvas id="squares" data-processing-sources="assets/processing/squares.pde"></canvas>
+
+								</section>
+							<!--
+								<header class="major">
+									<h2>Magna veroeros</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon major style1 fa-code"></span>
+										<h3>Ipsum consequat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Amed sed feugiat</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-diamond"></span>
+										<h3>Dolor nullam</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+								-->
+
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Basic Animations</h2>
+									<p>These first couple of sketches are pretty elementary and boring. Obviously I wanted to explore more exciting, dynamic features of Processing. This section discusses some basic animation and movements I explored.</p>
+								</header>
+								<section>
+								<p>
+									Now begins the <strong>exciting</strong> stuff. The next sketch is called <b>totalcontrol.pde</b>. Use the WASD keys to move the circle around.
+								</p>
+								<canvas id="totalcontrol" data-processing-sources="assets/processing/totalcontrol.pde"></canvas>
+								<p>
+									You could make the argument that the user is given <strong>total control</strong> over the circle... Ok, yeah I guess it's not that exciting. However, this inspired me to learn about movement and velocity! The next sketch is a simple example of a circle bouncing back and forth using velocity and direction variables.
+								</p>
+
+								<canvas id="calcexample" data-processing-sources="assets/processing/calcexample.pde"></canvas>
+
+								<p>
+									And then I go ahead and combine the previous two! In the next sketch, you can move the circle around with the WASD keys and click the mouse to draw a line between the center of the circle and your mouse. If it gets too crazy, press the space bar to stop!
+								</p>
+
+								<canvas id="circleandmousepressed" data-processing-sources="assets/processing/circleandmousepressed.pde"></canvas>
+
+								<p>
+									I think it's pretty cool how I combined two of the previous sketches into one. Making use of WASD control and velocity/direction movements. Next, I began touching on the power of classes, a very important concept in <a href="https://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</a>. The next sketch uses a class to continuously expand and pop the bubble enclosing your mouse.
+								</p>
+
+								<canvas id="mousebubble" data-processing-sources="assets/processing/mousebubble.pde"></canvas>
+
+								<p>
+									I didn't think classes were <i>that</i> important (even though they really are) since there aren't many other projects that I use classes in. The next two sketches are mainly animations that I expand on later, so remember these for later. The first is simply just a man running and jumping over a hurdle. It uses the modulo operator to animate the man's legs.
+								</p>
+
+								<canvas id="runningman" data-processing-sources="assets/processing/runningman.pde"></canvas>
+
+								<p>
+									The next sketch also uses the modulo operator to animate. It's a rocket ship that follows the mouse, and when the user presses down on the mouse, the <i>speed</i> of the rocket ship increases. I actually commented in the code <i>use your imagination</i>. This time, I use the modulus operator to animate the exhaust given off by the rocket ship.
+								</p>
+
+								<canvas id="rocketship" data-processing-sources="assets/processing/rocketship.pde"></canvas>
+
+								<p>
+									As you can see, the more projects I create, the more I am learning about simple Java programming. If interested, you can inspect the page to see how the code written advances through time. Coming up next, we begin developing simple games. 
+								</p>
+
+								</section>
+								<!--<ul class="statistics">
+									<li class="style1">
+										<span class="icon fa-code-fork"></span>
+										<strong>5,120</strong> Etiam
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open-o"></span>
+										<strong>8,192</strong> Magna
+									</li>
+									<li class="style3">
+										<span class="icon fa-signal"></span>
+										<strong>2,048</strong> Tempus
+									</li>
+									<li class="style4">
+										<span class="icon fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-diamond"></span>
+										<strong>1,024</strong> Nullam
+									</li> 
+								</ul>  -->
+								<!--<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+								-->
+							</section>
+
+							<!-- Third Section -->
+							<section id="third" class="main special">
+								<header class = "major">
+									<h2>Simple Games and Maps</h2>
+									<p>
+										This is where things get really interesting, and I am not being sarcastic this time around. I wanted to learn how to program because I played so many video games and was curious how they worked. I begin developing simple games and generating maps in this section. 
+									</p>
+								</header>
+								<section>
+								<p>
+									Remember the single hurdler from the previous section. Well, I gave him some friends and made them race. Using the power of arrays and random functions, and with the help of my teacher, the guys race and the sketch tells us who wins. Click on the screen to restart the race.
+								</p>
+
+								<canvas id="turtlehurdler" data-processing-sources="assets/processing/turtlehurdler.pde"></canvas>
+
+								<p>
+									Not only is this an advancement of one of the previous pieces I created, but it also utilizes the power of arrays. The next sketch is another game, but the user actually takes part in it. It's called <b>tie_fighter.pde</b> and the goal is to destroy the ship in front of you. To destroy it, use the space bar to shoot your laser and the A and D keys to move back and forth. The ship takes six hits of the laser to get brought down, it's actually a bit difficult. Once you destroy it, press R to reset and play again. I used the previous idea of having the user flying through space, and I suppose I watched Star Wars that week for a bit of inspiration. I'll even include the print log so you can see how I was using simple <i>print</i> functions to debug my work.
+								</p>
+
+								<canvas id="tie_fighter" data-processing-sources="assets/processing/tie_fighter.pde"></canvas>
+
+								<p>
+									Along with these games, I also created my rendition of the classic Snake game everyone knows and loves. Use the number keys to select your level (level 6 and up are very difficult, level 9 is almost impossible), and arrow keys to move. I had to make a couple of slight modifications since it wasn't working when running in the browser. 
+								</p>
+
+								<canvas id="simplesnake" data-processing-sources="assets/processing/simplesnake.pde"></canvas>
+
+								<p>
+									I remember feeling pretty satisfied after finishing the snake game. It took a lot of time and I used arrays, modulus, and various canvas manipulations to successfully create a simple game. Next I started exploring long if else statements. The next sketch creates rectangles of various size and colors randomly. As the rectangles overlap, it's almost like they paint the background over and over again.
+								</p>
+
+								<canvas id="randomsquares" data-processing-sources="assets/processing/randomsquares.pde"></canvas>
+
+								<p>
+									I then become involved in this idea of map generation. The next two sketches create 8-bit-like, 2D maps. The first sketch treats the canvas like a 40x40 grid. There are 8 different climates, each denoted by a different color. It creates the map by moving through each 160 blocks of the grid, by columns then rows, using the block above and to the left of the current block to decide what kind of climate the current block is. In doing this the map isn't totally randomly generated, but rather has a <a href="https://en.wikipedia.org/wiki/Perlin_noise">perlin noise</a>-like feel to the maps. Click the sketch to restart.
+								</p>
+
+								<canvas id="mapping" data-processing-sources="assets/processing/mapping.pde"></canvas>
+
+								<p>
+									The next sketch is an upgrade of the previous. It is larger and still treats the map as a grid and decides what the block looks like based on its surroundings, but fills the map randomly. If there are any blocks not filled by the initial filling, the untouched blocks are finished with a water climate. Aesthetically, the climate colors are slightly different. Once again, click the sketch to restart.
+								</p>
+
+								<canvas id="RandomMapping" data-processing-sources="assets/processing/RandomMapping.pde"></canvas>
+
+								<p>
+									After revisiting these works, I find that both are intended for you to use your imagination. Either the maps are extensions of a much bigger world or they may exist in their own dimension. 
+								</p>
+
+								</section>
+
+							</section>
+
+							<!-- Fourth Section -->
+							<section id="fourth" class="main special">
+								<header class = "major">
+									<h2>Later Works</h2>
+								</header>
+								<section>
+								<p>
+									I took a hiatus from Processing for a while but I revisited it recently and created the following sketches. The first is a simple piece of work inspired by the <a href="https://www.youtube.com/watch?v=VhWQ-r1LYXY">distortion of a water stream using electricity</a>. Move your mouse close to the falling circles to make them move.
+								</p>
+
+								<canvas id="gradientwiggle" data-processing-sources="assets/processing/gradientwiggle.pde"></canvas>
+								
+
+								<p>
+									My most recent work completed in Processing can be found on my github page, <a href="https://github.com/ConorMaley/EvolutionaryEcosystem">here</a>. It is a simulation of a visually-based predator-prey model where the predator and prey both change and evolve their traits to survive. I'll just link to the github page since I have experienced some problems when leaving the simulation running for too long, and since this is the last piece I'm showing off, it would be a great time for you to <a href="https://processing.org/download/">download Processing</a> and the <a href="">Evolutionary Ecosystem</a> to learn the amazing environment Processing is! Here is just a gif of the simulation in action. The red dots are the predators and the grey are the prey. Eating increases the creatures' health, the predators eat the prey and the prey graze on the food (grey squares).
+								</p>
+
+								<img src="images/run3.gif" width="795" height="600">
+
+								</section>
+
+							</section>
+
+							<!--Fifth Section -->
+							<section id="Fifth" class="main special">
+								<header class = "major">
+									<h2>Conclusion</h2>
+								</header>
+								<section>
+								<p>
+									I thought showing a development of visual pieces I have done is much more interesting than just showing lines and lines of code (although some think that would be cool). The best part of the project has to be the fact that you don't need a programming background to see how my programming toolbox has advanced; anyone can relate to it. Thank you for visiting! If you need any contact information, feel free to check out the footer below.
+								</p>
+
+								</section>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section align = "center">
+							<p>
+								Use the links below to view some of my personal profiles!
+							</p>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/conor-maley-405413a1/" class="icon fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/ConorMaley" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Conor Maley. Site design by: <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
